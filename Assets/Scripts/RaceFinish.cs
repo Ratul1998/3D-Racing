@@ -10,6 +10,7 @@ public class RaceFinish : MonoBehaviour {
     public GameObject ViewModes;
     public GameObject LevelMusic;
     public GameObject CompleteTrig;
+    public GameObject EndPanel;
 
     void OnTriggerEnter()
     {
@@ -34,6 +35,8 @@ public class RaceFinish : MonoBehaviour {
                 ViewModes.SetActive(false);
                 GlobalCash.TotalCash += 100;
                 PlayerPrefs.SetInt("SavedCash", GlobalCash.TotalCash);
+                EndPanel.SetActive(true);
+                MyCar.GetComponent<CarAudio>().enabled = false;
             }
         }
     }

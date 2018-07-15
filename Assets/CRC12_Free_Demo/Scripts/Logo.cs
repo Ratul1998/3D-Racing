@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Collections;
 using System;
 using System.IO;
-using UnityEditor;
 
 
 
@@ -296,7 +295,7 @@ namespace mset {
 						GUI.color = new Color(1,1,1,0.0f);
 
 						if(GUI.Button(texRect, logoTexture)){
-							UnityEditorInternal.AssetStore.Open(uASLink);  
+
 						}
 						GUI.color = tmpColor;
 					}

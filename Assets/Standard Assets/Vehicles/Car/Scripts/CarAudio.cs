@@ -123,7 +123,7 @@ namespace UnityStandardAssets.Vehicles.Car
                     // adjust the pitches based on the multipliers
                     m_LowAccel.pitch = pitch*pitchMultiplier;
                     m_LowDecel.pitch = pitch*pitchMultiplier;
-                    m_HighAccel.pitch = pitch*highPitchMultiplier*pitchMultiplier;
+                    m_HighAccel.pitch = pitch * highPitchMultiplier * pitchMultiplier;
                     m_HighDecel.pitch = pitch*highPitchMultiplier*pitchMultiplier;
 
                     // get values for fading the sounds based on the acceleration
